@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lights Out</h1>
+    <div id="game-board"></div>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+    
+    <!-- Addendum Section -->
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p>
+            The development of the Lights Out game involved a combination of creative design and technical implementation. The process began with establishing a 5x5 grid to balance complexity and playability, ensuring that the game would be both engaging and manageable for players. The choice of using CSS Grid for the layout was driven by its flexibility in creating a responsive and visually appealing game board. Each square in the grid was styled to enhance interactivity, with smooth transitions to provide feedback when toggled.
+        </p>
+        <p>
+            A significant challenge was ensuring that the game board was randomly solvable. Initially, random configurations were used, which sometimes resulted in unsolvable boards. This was resolved by setting up the board to start in a solved state and using a straightforward randomization approach that guarantees solvability. This method ensures a consistent and fair gameplay experience.
+        </p>
+        <p>
+            Insights gained include the importance of a well-defined initial game state and the impact of visual feedback on user experience. Additionally, the project highlighted the effectiveness of separating concerns by using HTML for structure, CSS for presentation, and JavaScript for functionality. 
+        </p>
+        <p>
+            User feedback was valuable during the development phase, as it helped identify areas for improvement in the game's responsiveness and user interaction. Implementing feedback resulted in a more intuitive interface and smoother gameplay.
+        </p>
+        <p>
+            Finally, the project emphasized the importance of testing across different devices and screen sizes to ensure a consistent experience. This led to adjustments in the CSS to enhance responsiveness and maintain visual consistency across various platforms.
+        </p>
+    </section>
+</body>
+</html>
